@@ -1,9 +1,17 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@600;700&family=Kufam:wght@700&family=Kulim+Park:wght@400;700&display=swap');
+
+@theme {
+  --font-kufam: 'Kufam', sans-serif;
+  --font-league: 'League Spartan', sans-serif;
+  --font-kulim: 'Kulim Park', sans-serif;
+  --default-border-color: transparent;
+}
 
 :root {
   --text: #6b6375;
   --text-h: #08060d;
-  --bg: #fff;
+  --bg: #0C1011;
   --border: #e5e4e7;
   --code-bg: #f4f3ec;
   --accent: #aa3bff;
@@ -19,9 +27,9 @@
 
   font: 18px/145% var(--sans);
   letter-spacing: 0.18px;
-  color-scheme: light dark;
+  color-scheme: dark;
   color: var(--text);
-  background: var(--bg);
+  background: #0C1011;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -53,19 +61,19 @@
 }
 
 #root {
-  width: 1126px;
-  max-width: 100%;
+  width: 100%;
+  max-width: 1920px;
   margin: 0 auto;
-  text-align: center;
-  border-inline: 1px solid var(--border);
   min-height: 100svh;
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
 }
 
-body {
+html, body {
   margin: 0;
+  padding: 0;
+  background: #0C1011;
 }
 
 h1,
