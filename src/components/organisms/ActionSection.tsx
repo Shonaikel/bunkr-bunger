@@ -1,6 +1,6 @@
 // Figma node 2070:1478 — 1920×532px
 
-const BURGER_IMG = "https://www.figma.com/api/mcp/asset/c9fdfba5-4a8f-4323-9e4d-02b8c3f2cccf";
+const BURGER_IMG = "/assets/action-burger.png";
 
 export default function ActionSection({ className = "" }: { className?: string }) {
   return (

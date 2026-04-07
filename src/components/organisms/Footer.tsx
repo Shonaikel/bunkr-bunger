@@ -1,6 +1,7 @@
 // Figma node 81:707 — 1920×86px
+import { Link } from 'react-router-dom';
 
-const LOGO = "https://www.figma.com/api/mcp/asset/e47fe759-452a-4d00-aa05-c0bb3d5aba81";
+const LOGO = "/assets/footer-logo.png";
 
 const NAV_ITEMS = [
   { href: "/locations", label: "UBICACIONES" },
@@ -11,7 +12,7 @@ const NAV_ITEMS = [
 export default function Footer() {
   return (
     <footer
-      className="relative w-full h-[86px] bg-[#1b1b1b]"
+      className="relative w-full h-[80px] bg-[#1b1b1b]"
       data-name="FOOTER"
       data-node-id="81:707"
     >
@@ -30,13 +31,13 @@ export default function Footer() {
           {/* Nav links */}
           <nav className="flex items-center gap-[51px]">
             {NAV_ITEMS.map((item) => (
-              <a
+              <Link
                 key={item.href}
-                href={item.href}
-                className="font-league font-bold text-[17px] text-[#d9d9d9] tracking-[0.95px] leading-normal whitespace-nowrap cursor-pointer hover:text-white transition-colors"
+                to={item.href}
+                className="font-league font-bold text-[12px] text-[#d9d9d9] tracking-[0.95px] leading-normal whitespace-nowrap cursor-pointer hover:text-white transition-colors"
               >
                 {item.label}
-              </a>
+              </Link>
             ))}
           </nav>
         </div>

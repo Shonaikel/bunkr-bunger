@@ -1,14 +1,14 @@
 // Figma node 2070:1412 — 1920×757px
 
-const IMG_FRIES  = "https://www.figma.com/api/mcp/asset/3a03a7a5-ed0a-4541-be95-3ed586083ad4";
-const IMG_BURGER = "https://www.figma.com/api/mcp/asset/0a050cf0-2a9a-44c8-95e7-2ad15d88aedb";
-const LINE_LEFT  = "https://www.figma.com/api/mcp/asset/6bb2b0cb-c7c4-478d-8488-01e81d8e26ea";
-const LINE_RIGHT = "https://www.figma.com/api/mcp/asset/5dcd9ab4-0b34-4339-9fbc-b33b558f2567";
+const IMG_FRIES  = "/assets/info-fries.png";
+const IMG_BURGER = "/assets/info-burger.png";
+const LINE_LEFT  = "/assets/info-line-left.svg";
+const LINE_RIGHT = "/assets/info-line-right.svg";
 
 // Icons — Figma node 2070:1412
-const ICON_1 = "https://www.figma.com/api/mcp/asset/0449842d-384c-484d-8be1-45f10b9dc073"; // AUTENTICA COMIDA
-const ICON_2 = "https://www.figma.com/api/mcp/asset/0e5c6189-e550-4e8c-a918-11afbced9d37"; // INGREDIENTES PREMIUM
-const ICON_3 = "https://www.figma.com/api/mcp/asset/ccd7986d-deae-42df-9c5f-4d7e20405dd9"; // MENÚ CREATIVO
+const ICON_1 = "/assets/info-icon-1.svg"; // AUTENTICA COMIDA
+const ICON_2 = "/assets/info-icon-2.svg"; // INGREDIENTES PREMIUM
+const ICON_3 = "/assets/info-icon-3.svg"; // MENÚ CREATIVO
 
 const LOREM = "Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis pellentesque sem placerat. In id cursus pellentesquet.";
 

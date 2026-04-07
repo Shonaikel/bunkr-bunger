@@ -1,9 +1,9 @@
 // Figma node 2070:1468 — 1920×389px
 
-const MAP_BG    = "https://www.figma.com/api/mcp/asset/6a5eb234-1db3-4a8e-a2e5-fcb7779edc6d";
-const MAP_1     = "https://www.figma.com/api/mcp/asset/837a9b8e-5ebc-4cbd-bb58-6b79828b9669";
-const MAP_2     = "https://www.figma.com/api/mcp/asset/d9717a9a-abbe-4b80-91c7-721a6f0da0df";
-const LINE      = "https://www.figma.com/api/mcp/asset/83209165-21bc-413b-9e6c-fdf2fa1f8e07";
+const MAP_BG    = "/assets/map-bg.jpg";
+const MAP_1     = "/assets/map-1.jpg";
+const MAP_2     = "/assets/map-2.jpg";
+const LINE      = "/assets/location-line.svg";
 
 export default function Location({ className = "" }: { className?: string }) {
   return (

@@ -1,9 +1,9 @@
 // Figma node 2070:1448 — 1920×301px
 
-const ICON_DELIVERY  = "https://www.figma.com/api/mcp/asset/38d10ce0-2d10-4388-84db-da0681603b5d";
-const ICON_DRINKS    = "https://www.figma.com/api/mcp/asset/27604722-3460-45a2-86ec-20e70df50618";
-const ICON_SHIPPING  = "https://www.figma.com/api/mcp/asset/c814df55-439e-4e65-a8b7-9d7dc8fb4802";
-const ICON_AWARD     = "https://www.figma.com/api/mcp/asset/f8705435-34c5-4a53-8f3e-51f99d58c8f5";
+const ICON_DELIVERY  = "/assets/icon-delivery.svg";
+const ICON_DRINKS    = "/assets/icon-drinks.svg";
+const ICON_SHIPPING  = "/assets/icon-shipping.svg";
+const ICON_AWARD     = "/assets/icon-award.svg";
 
 const LOREM = "Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien planet.";
 

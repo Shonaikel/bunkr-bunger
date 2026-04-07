@@ -1,23 +1,23 @@
 // Figma node 2070:1349 — 1920×1561px
 
 // Background
-const BG_BLUR     = "https://www.figma.com/api/mcp/asset/7f5b2170-6e7c-43ae-8fb7-b533d455c5d7";
+const BG_BLUR     = "/assets/best-bg-blur.jpg";
 
 // Burger card images
-const BURGER_1    = "https://www.figma.com/api/mcp/asset/0144b96c-7560-4ea2-b2a8-3cc116e36c5a";
-const BURGER_2    = "https://www.figma.com/api/mcp/asset/23bf7e0d-8e1d-490f-8f85-06cc6770646e";
-const BURGER_3    = "https://www.figma.com/api/mcp/asset/ce150f19-9b7c-48a8-82ba-bda236264fcb";
-const BURGER_4    = "https://www.figma.com/api/mcp/asset/c1222d3d-7923-4306-91db-45b210d67917";
+const BURGER_1    = "/assets/best-burger-1.png";
+const BURGER_2    = "/assets/best-burger-2.png";
+const BURGER_3    = "/assets/best-burger-3.png";
+const BURGER_4    = "/assets/best-burger-4.png";
 
 // Menu grid images
-const MENU_LEFT   = "https://www.figma.com/api/mcp/asset/23ce1d9e-9302-44fa-b52a-2f4ce431a287";
-const MENU_MID_T  = "https://www.figma.com/api/mcp/asset/d6082367-52b0-488d-823f-50363af7d0fb";
-const MENU_MID_B  = "https://www.figma.com/api/mcp/asset/4f92cbb0-bcc6-400b-a90c-652532f7d503";
-const MENU_RIGHT  = "https://www.figma.com/api/mcp/asset/3fb3454e-c615-47f0-8b16-b6c977d17f74";
+const MENU_LEFT   = "/assets/menu-left.jpg";
+const MENU_MID_T  = "/assets/menu-mid-t.jpg";
+const MENU_MID_B  = "/assets/menu-mid-b.jpg";
+const MENU_RIGHT  = "/assets/menu-right.jpg";
 
 // Decorative lines
-const LINE_LEFT   = "https://www.figma.com/api/mcp/asset/9fc61849-8914-4184-bc0a-7a8ae33724c4";
-const LINE_RIGHT  = "https://www.figma.com/api/mcp/asset/e02681c7-30b6-4595-b057-d7afc22a2f27";
+const LINE_LEFT   = "/assets/line-left.svg";
+const LINE_RIGHT  = "/assets/line-right.svg";
 
 interface BurgerCardProps {
   image: string;
@@ -108,7 +108,7 @@ export default function BestBurgers({ className = "" }: { className?: string }) 
 
       {/* VER MENÚ button */}
       <a
-        href="#"
+        href="/menu"
         className="absolute inset-[38.24%_43.54%_58.17%_45.36%] flex items-center justify-center bg-[#f3731c] rounded-[5px] hover:opacity-90 transition-opacity cursor-pointer"
         data-node-id="2028:1284"
       >

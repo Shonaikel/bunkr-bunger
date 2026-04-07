@@ -1,3 +1,10 @@
-// Figma Asset URLs (valid for 7 days)
-export const LOGO_URL = "https://www.figma.com/api/mcp/asset/f432b3e5-e613-42e3-a648-53192fdec413";
-export const CART_ICON_URL = "https://www.figma.com/api/mcp/asset/3dd8ef6c-1bb9-4fc2-8a5e-a6843be33839";
+// Local assets (downloaded from Figma)
+export const LOGO_URL = "/assets/logo.png";
+export const CART_ICON_URL = "/assets/cart-icon.png";
+
+// Locations page assets
+export const LOCATIONS_HERO_URL = "/assets/locations-hero.jpg";
+export const LOCATIONS_MAP_URL = "/assets/locations-map.jpg";
+export const LOCATIONS_MAP_SJ_URL = "/assets/locations-map-sj.jpg";
+export const LOCATIONS_MAP_TOGGLE_URL = "/assets/locations-map-toggle.png";
+export const LOCATIONS_MAP_EXPAND_URL = "/assets/locations-map-expand.png";
