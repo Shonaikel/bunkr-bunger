@@ -1,53 +1,49 @@
-// Figma node 2070:1478 — 1920×532px
-
-const BURGER_IMG = "/assets/action-burger.png";
-
 export default function ActionSection({ className = "" }: { className?: string }) {
   return (
-    <section
-      className={`relative w-full h-[532px] overflow-hidden bg-[#f4b525] ${className}`}
-      data-name="ACTION SECTION"
-      data-node-id="2070:1478"
-    >
-      {/* Burger image — right side */}
-      <div className="absolute inset-[4.51%_0_0_32.29%] overflow-hidden pointer-events-none" data-node-id="2070:1476">
-        <img
-          alt="Burger"
-          className="absolute h-[233.87%] left-[6.12%] max-w-none top-[-60.31%] w-[99.24%] object-cover"
-          src={BURGER_IMG}
-        />
-      </div>
-
-      {/* Title: "DISFRUTA YA EN BUNKR" */}
-      <p
-        className="absolute inset-[20.49%_64.68%_auto_17.16%] leading-none text-black whitespace-nowrap"
-        data-node-id="2070:1471"
+    /* Contenedor padre para centrado y evitar espacios extra */
+    <div className="flex w-full justify-center bg-[#f4b525] m-0 p-0 leading-none">
+      
+      <section
+        className={`relative w-full max-w-[1920px] min-h-[clamp(26rem,35vw,33.25rem)] overflow-hidden bg-[#f4b525] ${className}`}
+        data-name="ACTION SECTION"
       >
-        <span className="block font-['Kumbh_Sans',sans-serif] font-semibold text-[40px] leading-normal">DISFRUTA YA EN</span>
-        <span className="block font-['Kumbh_Sans',sans-serif] font-semibold text-[64px] leading-normal">BUNKR</span>
-      </p>
+        {/* IMAGE BACKGROUND*/}
+        <div className="absolute top-0 right-[-53px] bottom-0 w-[60%] pointer-events-none z-0 transform translate-y-[10%]">
+          <img
+            alt="Bunkr Burger"
+            src="/assets/burgers/action-burger.png"
+            className="h-full w-full object-cover object-right scale-105 origin-right"
+          />
+        </div>
 
-      {/* Subtitle */}
-      <p
-        className="absolute inset-[46.99%_64.37%_auto_17.16%] font-kulim font-bold text-[14px] text-[#515151] tracking-[0.42px] leading-normal"
-        data-node-id="2070:1475"
-      >
-        Enjoy breathtaking views, beautiful landscapes, and unforgettable moments in one of the world's most iconic destinations.
-      </p>
+        {/* Content layer — Mantenemos tu estructura de grid pero aseguramos el z-index */}
+        <div className="relative z-10 min-h-[inherit] max-w-[1400px] xl:max-w-[1600px] 2xl:max-w-[1700px] mx-auto px-[clamp(1rem,5vw,6.25rem)] grid grid-cols-[45%_1fr]">
 
-      {/* CTA Button */}
-      <a className="absolute contents cursor-pointer" data-node-id="2070:1472">
-        <div
-          className="absolute inset-[60.9%_72.82%_28.57%_17.16%] bg-[#f3731c] rounded-[5px] shadow-[0px_4px_20px_0px_rgba(0,0,0,0.15)] hover:opacity-90 transition-opacity"
-          data-node-id="2070:1473"
-        />
-        <p
-          className="absolute inset-[64.29%_72.82%_auto_17.16%] font-kulim font-semibold text-[16px] text-white text-center tracking-[2.4px] leading-normal cursor-pointer whitespace-nowrap"
-          data-node-id="2070:1474"
-        >
-          ORDENA YA
-        </p>
-      </a>
-    </section>
+          {/* Left — Text + CTA */}
+          <div className="flex flex-col justify-center shrink-0">
+            <p className="leading-none text-black whitespace-nowrap">
+              <span className="block font-league font-semibold text-[clamp(1.75rem,3vw,2.5rem)] leading-normal">RESERVA YA EN</span>
+              <span className="block font-league font-semibold text-[clamp(2.5rem,4.8vw,4rem)] leading-normal">BUNKR</span>
+            </p>
+            <p className="font-kulim font-bold text-[clamp(0.75rem,0.9vw,0.875rem)] text-[#515151] tracking-[0.42px] leading-normal mt-[clamp(0.5rem,1vw,0.75rem)] max-w-[22.125rem]">
+              Escribenos para reservaciones, pedidos o más información y
+              déjanos hacer de tu visita un momento único con vistas increíbles, buena comida y un ambiente especial.
+            </p>
+            <a
+              href="/contact"
+              className="mt-[clamp(1rem,2vw,1.5rem)] w-fit flex items-center justify-center px-[clamp(1rem,2vw,2rem)] py-[clamp(0.5rem,0.75vw,0.75rem)] bg-[#f3731c] rounded-[5px] shadow-[0px_4px_20px_0px_rgba(0,0,0,0.15)] hover:opacity-90 transition-opacity"
+            >
+              <span className="font-kulim font-semibold text-[clamp(0.875rem,1vw,1rem)] text-white tracking-[2.4px] leading-normal">
+                CONTACTANOS
+              </span>
+            </a>
+          </div>
+
+          {/* Right column — El espacio vacío que permite ver la imagen de fondo */}
+          <div />
+
+        </div>
+      </section>
+    </div>
   );
 }

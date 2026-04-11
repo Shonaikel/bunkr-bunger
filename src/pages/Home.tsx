@@ -1,13 +1,14 @@
-import { Hero, BestBurgers, Information, Services, Location, ActionSection } from "../components";
+import { Hero, BestBurgers, OrderMenu, Information, Services, Location, ActionSection } from "../components";
 
 export default function Home() {
   return (
     <>
       <Hero />
       <BestBurgers />
-      <Information className="mt-[80px]" />
-      <Services className="mt-[80px]" />
-      <Location className="mt-[80px]" />
+      <OrderMenu />
+      <Information className="mt-[clamp(2.5rem,6vw,5rem)]" />
+      <Services className="mt-[clamp(2.5rem,6vw,5rem)]" />
+      <Location className="mt-[clamp(2.5rem,6vw,5rem)]" />
       <ActionSection />
     </>
   );

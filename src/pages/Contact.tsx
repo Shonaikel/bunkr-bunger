@@ -1,9 +1,7 @@
 import { useState, type FormEvent } from "react";
 
-const BG_FOOD = "/assets/contact-bg.jpg";
+const BG_FOOD = "/assets/sections/contact-bg.jpg";
 
-
-const ICON_INSTAGRAM = "/assets/icon-instagram.png";
 
 interface InfoItemProps {
   icon?: string;
@@ -58,28 +56,26 @@ export default function Contact() {
   return (
     <section className="w-full bg-[#0C1011]">
       {/* Hero Banner */}
-      <div className="relative h-[395px] overflow-hidden">
-        <div className="absolute inset-0 opacity-40 overflow-hidden">
-          <img
-            alt=""
-            className="absolute w-full h-[326%] top-[-0.05%] left-0 object-cover pointer-events-none"
-            src={BG_FOOD}
-          />
-        </div>
-        <p className="relative font-kulim font-bold text-white text-[50px] tracking-[1.8px] text-center leading-normal pt-[143px]">
+      <div className="relative min-h-[clamp(18rem,28vw,18rem)] overflow-hidden flex items-center justify-center">
+        <img
+          alt=""
+          className="absolute inset-0 w-full h-full object-cover opacity-40 pointer-events-none"
+          src={BG_FOOD}
+        />
+        <p className="relative font-kulim font-bold text-white text-[clamp(2rem,3.8vw,3.125rem)] tracking-[1.8px] text-center leading-normal">
           CONTÁCTANOS
         </p>
       </div>
 
       {/* Content */}
-      <div className="px-[100px] pt-[60px] pb-[100px]">
-        <div className="flex gap-[160px]">
+      <div className="max-w-[1400px] xl:max-w-[1600px] 2xl:max-w-[1700px] mx-auto px-[clamp(1rem,5vw,6.25rem)] pt-[clamp(2.5rem,5vw,3.75rem)] pb-[clamp(3rem,7vw,6.25rem)]">
+        <div className="flex gap-[clamp(2rem,8vw,10rem)]">
           {/* Left Column — Info */}
-          <div className="w-[650px] shrink-0 animate-fade-in-up">
-            <p className="font-kulim font-bold text-[#d9d9d9] text-[34px] tracking-[1.2px] leading-normal">
+          <div className="flex-1 max-w-[40.625rem] animate-fade-in-up">
+            <p className="font-kulim font-bold text-[#d9d9d9] text-[clamp(1.5rem,2.6vw,2.125rem)] tracking-[1.2px] leading-normal">
               PONTE EN CONTACTO
             </p>
-            <p className="font-kulim font-normal text-[#d9d9d9] text-[15px] tracking-[0.75px] leading-normal mt-[20px]">
+            <p className="font-kulim font-normal text-[#d9d9d9] text-[15px] tracking-[0.75px] leading-normal mt-[clamp(0.75rem,1.5vw,1.25rem)]">
               Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae
               pellentesque sem placerat. In id cursus mi pretium tellus duis convallis pellentesque sem
               placerat. In id cursus pellentesquet. Lorem ipsum dolor sit amet consectetur adipiscing elit.
@@ -88,7 +84,7 @@ export default function Contact() {
             </p>
 
             {/* Info Grid */}
-            <div className="grid grid-cols-2 gap-y-[30px] gap-x-[80px] mt-[50px]">
+            <div className="grid grid-cols-2 gap-y-[clamp(1.25rem,2.5vw,1.875rem)] gap-x-[clamp(1rem,1.5vw,1.25rem)] mt-[clamp(2rem,4vw,3.125rem)]">
               <InfoItem
                 iconElement={
                   <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#d9d9d9" strokeWidth="1.5" xmlns="http://www.w3.org/2000/svg">
@@ -131,7 +127,7 @@ export default function Contact() {
             </div>
 
             {/* Social */}
-            <div className="mt-[40px]">
+            <div className="mt-[clamp(1.75rem,3vw,2.5rem)]">
               <p className="font-kulim font-normal text-white text-[15px] tracking-[0.75px] leading-normal">
                 FOLLOW US
               </p>
@@ -141,8 +137,10 @@ export default function Contact() {
                     <path d="M7.5 22V12h3.2l.5-3.7H7.5V5.7c0-1 .3-1.8 1.8-1.8H11.5V.6C11.1.5 9.9.3 8.4.3 5.4.3 3.3 2.1 3.3 5.5v2.8H0V12h3.3v10H7.5z" />
                   </svg>
                 </a>
-                <a href="#" className="w-[22px] h-[22px] block overflow-clip transition-opacity hover:opacity-70" aria-label="Instagram">
-                  <img alt="" className="w-full h-full object-contain" src={ICON_INSTAGRAM} />
+                <a href="#" className="transition-opacity hover:opacity-70" aria-label="Instagram">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="#df9a1b" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5a4.25 4.25 0 0 0 4.25-4.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 1.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7zm5.25-2.5a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5z" />
+                  </svg>
                 </a>
                 <a href="#" className="transition-opacity hover:opacity-70" aria-label="X">
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="#df9a1b" xmlns="http://www.w3.org/2000/svg">
@@ -155,7 +153,7 @@ export default function Contact() {
 
           {/* Right Column — Form */}
           <div className="flex-1 animate-fade-in-up" style={{ animationDelay: "0.15s" }}>
-            <p className="font-kulim font-bold text-white text-[34px] tracking-[1.2px] leading-normal">
+            <p className="font-kulim font-bold text-white text-[clamp(1.5rem,2.6vw,2.125rem)] tracking-[1.2px] leading-normal">
               TU INFORMACIÓN
             </p>
             <p className="font-kulim font-normal text-[#df9a1b] text-[15px] tracking-[0.75px] leading-normal mt-[4px]">

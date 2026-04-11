@@ -1,0 +1,14 @@
+<svg preserveAspectRatio="none" width="100%" height="100%" overflow="visible" style="display: block;" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="playwithcircularbuttonwithrightarrowofboldroundedfilledtriangle_80162 1" clip-path="url(#clip0_0_35)">
+<circle id="Ellipse 6" cx="20.8596" cy="20.8596" r="18.7018" fill="var(--fill-0, #DF9A1B)"/>
+<g id="Group">
+<path id="Vector" d="M20.5 0C9.17767 0 0 9.17767 0 20.5C0 31.8223 9.17767 41 20.5 41C31.8223 41 41 31.8223 41 20.5C41 9.17767 31.8223 0 20.5 0ZM20.5 37.7969C10.9469 37.7969 3.20312 30.0531 3.20312 20.5C3.20312 10.9469 10.9469 3.20312 20.5 3.20312C30.0531 3.20312 37.7969 10.9469 37.7969 20.5C37.7969 30.0531 30.0531 37.7969 20.5 37.7969Z" fill="var(--fill-0, #DF9A1B)"/>
+<path id="Vector_2" d="M28.3205 19.0489L15.9745 11.8744C14.6257 11.0761 13.333 11.7192 13.333 13.3033V27.6986C13.333 29.2802 14.6257 29.9246 15.9745 29.125L28.223 21.9517C29.5767 21.1534 29.6731 19.8472 28.3205 19.0489Z" fill="var(--fill-0, white)"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_0_35">
+<rect width="41" height="41" fill="white"/>
+</clipPath>
+</defs>
+</svg>

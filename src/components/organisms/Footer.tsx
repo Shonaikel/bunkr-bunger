@@ -1,7 +1,7 @@
 // Figma node 81:707 — 1920×86px
 import { Link } from 'react-router-dom';
 
-const LOGO = "/assets/footer-logo.png";
+const LOGO = "/assets/brand/footer-logo.png";
 
 const NAV_ITEMS = [
   { href: "/locations", label: "UBICACIONES" },
@@ -12,24 +12,20 @@ const NAV_ITEMS = [
 export default function Footer() {
   return (
     <footer
-      className="relative w-full h-[80px] bg-[#1b1b1b]"
+      className="relative w-full min-h-[clamp(4rem,6vw,5rem)] bg-[#1b1b1b]"
       data-name="FOOTER"
       data-node-id="81:707"
     >
-      <div className="relative h-full flex items-center justify-between px-[100px]">
+      <div className="relative h-full max-w-[1400px] xl:max-w-[1600px] 2xl:max-w-[1700px] mx-auto flex items-center justify-between">
         {/* Left: Logo + Nav */}
-        <div className="flex items-center gap-[51px]">
+        <div className="flex items-center gap-[clamp(1.5rem,3vw,3.1875rem)]">
           {/* Logo */}
-          <div className="w-[74px] h-[66px] shrink-0 self-center" data-node-id="2070:1484">
-            <img
-              alt="Bunkr Logo"
-              className="w-full h-full object-cover pointer-events-none"
-              src={LOGO}
-            />
-          </div>
+          <Link to="/" className="shrink-0 block w-[74px] h-[66px]">
+            <img alt="Bunkr Logo" className="w-[74px] h-[60px] object-contain" src={LOGO} />
+          </Link>
 
           {/* Nav links */}
-          <nav className="flex items-center gap-[51px]">
+          <nav className="flex items-center gap-[clamp(1.5rem,3vw,3.1875rem)]">
             {NAV_ITEMS.map((item) => (
               <Link
                 key={item.href}

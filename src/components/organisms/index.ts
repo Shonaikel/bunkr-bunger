@@ -5,4 +5,5 @@ export { default as Information } from "./Information";
 export { default as Services } from "./Services";
 export { default as Location } from "./Location";
 export { default as ActionSection } from "./ActionSection";
+export { default as OrderMenu } from "./OrderMenu";
 export { default as Footer } from "./Footer";

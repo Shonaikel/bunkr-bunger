@@ -1,75 +1,69 @@
-// Figma node 2070:1468 — 1920×389px
-
-const MAP_BG    = "/assets/map-bg.jpg";
-const MAP_1     = "/assets/map-1.jpg";
-const MAP_2     = "/assets/map-2.jpg";
-const LINE      = "/assets/location-line.svg";
+const MAP_1  = "/assets/locations/map-1.jpg";
+const MAP_2  = "/assets/locations/map-2.jpg";
 
 export default function Location({ className = "" }: { className?: string }) {
   return (
     <section
-      className={`relative w-full h-[389px] overflow-hidden bg-[#0c1011] ${className}`}
+      className={`w-full bg-[#0c1011] ${className}`}
       data-name="LOCATION"
-      data-node-id="2070:1468"
     >
-      {/* Title */}
-      <p
-        className="absolute inset-[2.57%_54.72%_auto_7.72%] font-kulim font-bold text-[40px] text-white text-center tracking-[1.2px] leading-normal whitespace-nowrap"
-        data-node-id="2070:1465"
-      >
-        HORARIOS Y SUCURSALES
-      </p>
+      <div className="max-w-[1400px] xl:max-w-[1600px] 2xl:max-w-[1700px] mx-auto px-[clamp(1rem,5vw,6.25rem)] pt-[clamp(1rem,2vw,1.25rem)] pb-[clamp(2.5rem,5vw,3.75rem)]">
+      {/* Content row — title + schedule on left, maps on right at the same level */}
+      <div className="flex gap-[clamp(1.5rem,3vw,2.5rem)]">
+        {/* Left: Title + Schedule & Branches */}
+        <div className="w-[42%] shrink-0">
+          <p className="font-kulim font-bold text-[clamp(1.75rem,2vw,2.5rem)] text-white tracking-[1.2px] leading-normal mb-[clamp(1rem,2.5vw,1.875rem)]">
+            HORARIOS Y SUCURSALES
+          </p>
+          <div className="flex items-center mt-[clamp(0.75rem,1.5vw,1.25rem)]">
+            {/* Column 1 — Horarios */}
+            <div className="w-1/2 pr-[20px]">
+              <p className="font-kulim font-bold text-[20px] text-white tracking-[0.6px] leading-normal">
+                LUNES A DOMINGO
+              </p>
+              <div className="mt-[20px]">
+                <p className="font-kulim font-bold text-[18px] text-[#df9a1b] tracking-[0.6px] leading-normal">LUNES A VIERNES</p>
+                <p className="font-kulim font-normal text-[15px] text-[#d9d9d9] tracking-[0.75px] leading-normal mt-[4px]">10:00am a 9:00pm</p>
+              </div>
+              <div className="mt-[30px]">
+                <p className="font-kulim font-bold text-[18px] text-[#df9a1b] tracking-[0.6px] leading-normal">SABADO A DOMINGO</p>
+                <p className="font-kulim font-normal text-[15px] text-[#d9d9d9] tracking-[0.75px] leading-normal mt-[4px]">10:00am a 5:00pm</p>
+              </div>
+            </div>
 
-      {/* Column 1 header */}
-      <p className="absolute inset-[23.14%_76.67%_auto_13.59%] font-kulim font-bold text-[20px] text-white tracking-[0.6px] leading-normal whitespace-nowrap" data-node-id="2070:1455">
-        LUNES A DOMINGO
-      </p>
-      {/* Column 2 header */}
-      <p className="absolute inset-[23.14%_60.31%_auto_29.69%] font-kulim font-bold text-[20px] text-white tracking-[0.6px] leading-normal whitespace-nowrap" data-node-id="2070:1456">
-        LUNES A DOMINGO
-      </p>
+            {/* Vertical divider */}
+            <div className="w-px h-[60%] bg-white/30" />
 
-      {/* Vertical divider line */}
-      <div className="absolute inset-[31.63%_73.19%_23.23%_26.81%] flex items-center justify-center">
-        <div className="shrink-0 h-px w-[175.597px] rotate-90">
-          <div className="relative w-full h-full">
-            <div className="absolute inset-[-2px_0_0_0]">
-              <img alt="" className="block max-w-none w-full h-full" src={LINE} />
+            {/* Column 2 — Sucursales */}
+            <div className="w-1/2 pl-[20px]">
+              <p className="font-kulim font-bold text-[20px] text-white tracking-[0.6px] leading-normal">
+                LUNES A DOMINGO
+              </p>
+              <div className="mt-[20px]">
+                <p className="font-kulim font-bold text-[20px] text-[#df9a1b] tracking-[0.6px] leading-normal">HEREDIA</p>
+                <p className="font-kulim font-normal text-[15px] text-[#d9d9d9] tracking-[0.75px] leading-normal mt-[4px]">10:00am a 9:00pm</p>
+              </div>
+              <div className="mt-[30px]">
+                <p className="font-kulim font-bold text-[20px] text-[#df9a1b] tracking-[0.6px] leading-normal">SAN JOSÉ</p>
+                <p className="font-kulim font-normal text-[15px] text-[#d9d9d9] tracking-[0.75px] leading-normal mt-[4px]">10:00am a 5:00pm</p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      {/* Row 1 col 1 */}
-      <p className="absolute inset-[40.36%_77.76%_auto_13.65%] font-kulim font-bold text-[20px] text-[#df9a1b] tracking-[0.6px] leading-normal whitespace-nowrap" data-node-id="2070:1457">LUNES A VIERNES</p>
-      <p className="absolute inset-[50.64%_78.75%_auto_13.59%] font-kulim font-normal text-[15px] text-[#d9d9d9] tracking-[0.75px] leading-normal whitespace-nowrap" data-node-id="2070:1461">10:00am a 9:00pm</p>
+        {/* Maps */}
+        <div className="flex-1 flex gap-[clamp(0.75rem,1.2vw,1rem)]">
+          {/* Map 1 — Heredia */}
+          <a href="/locations" className="flex-1 min-h-[clamp(14rem,20vw,17.5rem)] aspect-[5/4] rounded-[25px] overflow-hidden hover:opacity-90 transition-opacity">
+            <img alt="Mapa Heredia" className="w-full h-full object-cover" src={MAP_1} />
+          </a>
 
-      {/* Row 1 col 2 */}
-      <p className="absolute inset-[40.36%_65.89%_auto_29.74%] font-kulim font-bold text-[20px] text-[#df9a1b] tracking-[0.6px] leading-normal whitespace-nowrap" data-node-id="2070:1458">HEREDIA</p>
-      <p className="absolute inset-[50.64%_62.92%_auto_29.69%] font-kulim font-normal text-[15px] text-[#d9d9d9] tracking-[0.75px] leading-normal whitespace-nowrap" data-node-id="2070:1462">10:00am a 9:00pm</p>
-
-      {/* Row 2 col 1 */}
-      <p className="absolute inset-[68.89%_75.68%_auto_13.65%] font-kulim font-bold text-[20px] text-[#df9a1b] tracking-[0.6px] leading-normal whitespace-nowrap" data-node-id="2070:1459">SABADO A DOMINGO</p>
-      <p className="absolute inset-[78.92%_78.75%_auto_13.59%] font-kulim font-normal text-[15px] text-[#d9d9d9] tracking-[0.75px] leading-normal whitespace-nowrap" data-node-id="2070:1463">10:00am a 5:00pm</p>
-
-      {/* Row 2 col 2 */}
-      <p className="absolute inset-[68.89%_65.26%_auto_29.74%] font-kulim font-bold text-[20px] text-[#df9a1b] tracking-[0.6px] leading-normal whitespace-nowrap" data-node-id="2070:1460">SAN JOSÉ</p>
-      <p className="absolute inset-[78.92%_62.92%_auto_29.69%] font-kulim font-normal text-[15px] text-[#d9d9d9] tracking-[0.75px] leading-normal whitespace-nowrap" data-node-id="2070:1464">10:00am a 5:00pm</p>
-
-      {/* Map 1 — Heredia */}
-      <div className="absolute inset-[8.74%_26.76%_16.45%_54.83%] rounded-[25px] overflow-hidden" data-node-id="2070:1452">
-        <img alt="" className="absolute max-w-none object-cover w-full h-full rounded-[25px]" src={MAP_BG} />
-        <div className="absolute inset-0 overflow-hidden rounded-[25px]">
-          <img alt="Mapa Heredia" className="absolute h-[109.35%] left-[-19.98%] max-w-none top-[-9.34%] w-[132.44%] object-cover" src={MAP_1} />
+          {/* Map 2 — San José */}
+          <a href="/locations" className="flex-1 min-h-[clamp(14rem,20vw,17.5rem)] aspect-[5/4] rounded-[25px] overflow-hidden hover:opacity-90 transition-opacity">
+            <img alt="Mapa San José" className="w-full h-full object-cover" src={MAP_2} />
+          </a>
         </div>
       </div>
-
-      {/* Map 2 — San José */}
-      <div className="absolute inset-[7.71%_7.25%_17.48%_74.33%] rounded-[25px] overflow-hidden" data-node-id="2070:1453">
-        <img alt="" className="absolute max-w-none object-cover w-full h-full rounded-[25px]" src={MAP_BG} />
-        <div className="absolute inset-0 overflow-hidden rounded-[25px]">
-          <img alt="Mapa San José" className="absolute h-[121.36%] left-[-32.8%] max-w-none top-[-12.67%] w-[165.24%] object-cover" src={MAP_2} />
-        </div>
       </div>
     </section>
   );
