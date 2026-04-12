@@ -30,7 +30,7 @@ export default function Footer() {
               <Link
                 key={item.href}
                 to={item.href}
-                className="font-league font-bold text-[12px] text-[#d9d9d9] tracking-[0.95px] leading-normal whitespace-nowrap cursor-pointer hover:text-white transition-colors"
+                className="font-league font-bold text-xs md:text-sm tracking-wide text-[#d9d9d9]"
               >
                 {item.label}
               </Link>

@@ -37,7 +37,7 @@ function LocationCard({ location, isSelected, onClick }: LocationCardProps) {
     <button
       type="button"
       onClick={onClick}
-      className={`w-full max-w-[39rem] min-h-[clamp(5.5rem,8vw,6.875rem)] rounded-[10px] px-[clamp(1rem,1.6vw,1.625rem)] py-[14px] outline-none
+      className={`w-full  min-h-[clamp(5.5rem,8vw,6.875rem)] rounded-[10px] px-[clamp(1rem,1.6vw,1.625rem)] py-[14px] outline-none
         text-left cursor-pointer transition-all duration-200 border border-[#2a2e2f]
         hover:scale-[1.02] active:scale-[0.98]
         ${isSelected ? "bg-[#222728]" : "bg-[#181c1d] hover:bg-[#1e2223]"}`}
@@ -75,7 +75,7 @@ export default function Locations() {
       <div className="max-w-[1400px] xl:max-w-[1600px] 2xl:max-w-[1700px] mx-auto px-[clamp(1rem,5vw,6.25rem)] pt-[clamp(3rem,6vw,5.625rem)] pb-[clamp(4rem,12vw,12.375rem)]">
         <div className="flex gap-[clamp(1.5rem,3vw,2.5rem)] items-start">
           {/* Left Column — Restaurant list */}
-          <div className="shrink-0 mt-[4px] animate-fade-in-up">
+          <div className="w-[420px] lg:w-[480px] xl:w-[520px] mt-[4px] animate-fade-in-up">
             <p className="font-kulim font-bold text-white text-[clamp(1.5rem,2.6vw,2.125rem)] tracking-[1.2px] leading-normal">
               RESTAURANTES
             </p>
@@ -93,7 +93,7 @@ export default function Locations() {
           </div>
 
           {/* Right Column — Google Maps */}
-          <div className="relative flex-1 h-[clamp(18rem,26vw,23.5rem)] rounded-[10px] overflow-hidden animate-fade-in-up border border-[#2a2e2f]" style={{ animationDelay: "0.15s" }}>
+          <div className="relative flex-1 max-w-[900px] h-[clamp(18rem,26vw,23.5rem)] rounded-[10px] overflow-hidden animate-fade-in-up border border-[#2a2e2f]" style={{ animationDelay: "0.15s" }}>
             <iframe
               key={selected.id}
               title={`Mapa de ${selected.name}`}
