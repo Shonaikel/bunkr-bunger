@@ -1,73 +1,37 @@
-# React + TypeScript + Vite
+# 🍔 Bunkr Burger Factory
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bunker Factory is a modern restaurant website designed to deliver a strong visual identity and engaging user experience. It combines clean layouts, smooth animations, and well-structured sections to create a dynamic and polished interface.
 
-Currently, two official plugins are available:
+Developed using React, TypeScript, and Tailwind CSS, the project follows a scalable component-based approach and clean development practices.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+The entire project was built in just one week using an accelerated workflow powered by Claude, enabling rapid iteration without compromising design and code quality.
 
-## React Compiler
+## Figma Design:
+https://www.figma.com/community/file/1619179765609161451/bunkr-burger-factory?q_id=fe864ea9-89b8-4391-b62f-3d48b2fe9c82
+<img width="1630" height="807" alt="Bunkrprev2" src="https://github.com/user-attachments/assets/1dfda7ed-dbcd-499a-91e6-ccc311ab8536" /> <img width="1361" height="820" alt="Bunkrprev3" src="https://github.com/user-attachments/assets/3bde7b60-5737-4ae0-97bc-a8758dd4b42d" /> 
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ⚙️ Tech Stack
 
-## Expanding the ESLint configuration
+Built with a modern frontend stack and an accelerated development workflow:
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **React** – Component-based architecture for dynamic interfaces  
+- **TypeScript** – Type safety and scalable code structure  
+- **Tailwind CSS** – Utility-first styling for fast and consistent UI  
+- **Claude** – AI-assisted development to speed up iteration and implementation
+- 
+## 🛠️ Installation
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+```bash
+# Clone the repository
+git clone https://github.com/Shonaikel/bunker-factory.git
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+# Go into the project
+cd bunker-factory
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+# Install dependencies
+npm install
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+# Run the project
+npm run dev
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
