@@ -34,7 +34,7 @@ export default function Hero({ className = "" }: { className?: string }) {
         <div className="relative z-20 h-full max-w-[1400px] xl:max-w-[1600px] 2xl:max-w-[1700px] mx-auto gap-4 md:gap-8 items-start py-8 md:py-21 grid grid-cols-[clamp(2.75rem,4.6vw,4.625rem)_1fr_2.5625rem]">
 
           {/* Numbers column */}
-          <div className="flex flex-col items-center pt-[clamp(0.5rem,2.2vw,2rem)]">
+          <div className="flex flex-col items-center pt-[clamp(0.5rem,2.2vw,2rem)] animate-fade-in-up" style={{ animationDelay: "0.3s" }}>
             <div className="flex flex-col items-center gap-[clamp(1rem,2.6vw,2.5rem)]">
               {['05', '04', '03', '02'].map(n => <p key={n} className={numClass}>{n}</p>)}
             </div>
@@ -45,7 +45,7 @@ export default function Hero({ className = "" }: { className?: string }) {
           </div>
 
           {/* Content block */}
-          <div className="flex flex-col gap-1 md:gap-2 max-w-md md:max-w-lg pt-4 md:pt-12 pl-2 md:pl-20">
+          <div className="flex flex-col gap-1 md:gap-2 max-w-md md:max-w-lg pt-4 md:pt-12 pl-2 md:pl-20 animate-fade-in-up">
             <p className="font-kufam font-bold text-[#df9a1b] leading-none tracking-wider text-[clamp(3rem,7vw,8rem)] drop-shadow-lg">
               BUNKR
             </p>
@@ -57,7 +57,7 @@ export default function Hero({ className = "" }: { className?: string }) {
             <a
               href="/menu"
               className="mt-4 w-fit flex items-center justify-center bg-[#d9d9d9] text-[#1b1b1b] rounded-md px-6 py-2 md:px-8 md:py-3 
-                         shadow hover:opacity-90 active:scale-95 transition-all duration-200"
+                         shadow hover:scale-[1.02] active:scale-[0.98] transition-all duration-200"
             >
               <span className="font-league font-semibold text-[#1b1b1b] tracking-[1px] leading-normal text-[clamp(0.625rem,1.05vw,1.25rem)]">
                 ORDENA YA
@@ -66,7 +66,7 @@ export default function Hero({ className = "" }: { className?: string }) {
           </div>
 
           {/* Social icons column */}
-            <div className="flex flex-col items-center gap-4 md:gap-6 pt-2 md:pt-4 translate-x-2 md:translate-x-2.5">
+            <div className="flex flex-col items-center gap-4 md:gap-6 pt-2 md:pt-4 translate-x-2 md:translate-x-2.5 animate-fade-in-up" style={{ animationDelay: "0.15s" }}>
             {SOCIAL_ICONS.map(({ src, alt, href }) => (
               <a
                 key={alt}

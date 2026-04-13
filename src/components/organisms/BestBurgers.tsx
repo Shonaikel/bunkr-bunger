@@ -25,7 +25,7 @@ export default function BestBurgers({ className = "" }: { className?: string }) 
       <div className="relative z-10 max-w-[1400px] xl:max-w-[1600px] 2xl:max-w-[1700px] mx-auto px-[clamp(1rem,5vw,6.25rem)] flex flex-col items-center justify-between gap-[clamp(0.75rem,1.5vw,1.25rem)] pt-0 pb-[clamp(1.5rem,3vw,2.25rem)]">
 
         {/* Title with decorative lines */}
-        <div className="flex items-center justify-center gap-[clamp(0.5rem,1.5vw,1rem)] w-full">
+        <div className="flex items-center justify-center gap-[clamp(0.5rem,1.5vw,1rem)] w-full animate-fade-in-up">
           <div className="shrink-0 h-px flex-1 max-w-[4500px] xl:max-w-[600px]">
             <img alt="" className="block w-full h-full" src={LINE_LEFT} />
           </div>
@@ -38,7 +38,7 @@ export default function BestBurgers({ className = "" }: { className?: string }) 
         </div>
 
         {/* Burger cards */}
-        <div className="flex justify-center gap-4 w-full">
+        <div className="flex justify-center gap-4 w-full animate-fade-in-up" style={{ animationDelay: "0.15s" }}>
           {BURGERS.map((b) => (
             <BurgerCard key={b.href} image={b.image} name={b.name} price={`$${b.price.toFixed(2)}`} description={b.description} href={b.href} />
           ))}
@@ -48,7 +48,7 @@ export default function BestBurgers({ className = "" }: { className?: string }) 
         <a
           href="/menu"
           className="h-[46px] px-8 flex items-center justify-center bg-[#f3731c] rounded-[5px]
-                    hover:opacity-90 active:scale-95 transition-all duration-200"
+                    hover:scale-[1.02] active:scale-[0.98] transition-all duration-200"
         >
           <span className="font-kulim font-bold text-[18px] text-white tracking-[0.96px] leading-normal">
             VER MENÚ

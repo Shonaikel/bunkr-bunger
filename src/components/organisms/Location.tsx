@@ -11,8 +11,8 @@ export default function Location({ className = "" }: { className?: string }) {
       {/* Content row — title + schedule on left, maps on right at the same level */}
       <div className="flex gap-[clamp(1.5rem,3vw,2.5rem)]">
         {/* Left: Title + Schedule & Branches */}
-        <div className="w-[42%] shrink-0">
-          <p className="font-kulim font-bold text-[clamp(1.75rem,2vw,2.5rem)] text-white tracking-[1.2px] leading-normal mb-[clamp(1rem,2.5vw,1.875rem)]">
+        <div className="w-[42%] shrink-0 animate-fade-in-up">
+          <p className="font-kulim font-bold text-[clamp(1.75rem,2vw,2.5rem)] text-white tracking-[0.2px] leading-normal mb-[clamp(1rem,2.5vw,1.875rem)]">
             HORARIOS Y SUCURSALES
           </p>
           <div className="flex items-center mt-[clamp(0.75rem,1.5vw,1.25rem)]">
@@ -52,7 +52,7 @@ export default function Location({ className = "" }: { className?: string }) {
         </div>
 
         {/* Maps */}
-        <div className="flex-1 flex gap-[clamp(0.75rem,1.2vw,1rem)]">
+        <div className="flex-1 flex gap-[clamp(0.75rem,1.2vw,1rem)] animate-fade-in-up" style={{ animationDelay: "0.15s" }}>
           {/* Map 1 — Heredia */}
           <a href="/locations" className="flex-1 min-h-[clamp(14rem,20vw,17.5rem)] aspect-[5/4] rounded-[25px] overflow-hidden hover:opacity-90 transition-opacity">
             <img alt="Mapa Heredia" className="w-full h-full object-cover" src={MAP_1} />

@@ -53,7 +53,7 @@ function ExtraButton({ label, price, active, onToggle }: {
   return (
     <button
       onClick={onToggle}
-      className={`h-[clamp(2rem,2.3vw,2.125rem)] w-full max-w-[14.125rem] rounded-[5px] shadow-[0px_4px_20px_0px_rgba(0,0,0,0.15)] flex items-center gap-[8px] px-[10px] transition-all duration-200 border-2 ${
+      className={`h-[clamp(2rem,2.3vw,2.125rem)] w-full max-w-[14.125rem] rounded-[5px] shadow-[0px_4px_20px_0px_rgba(0,0,0,0.15)] flex items-center gap-[8px] px-[10px] transition-all duration-200 border-2 hover:scale-[1.01] active:scale-[0.97] ${
         active ? "bg-[rgba(243,115,28,0.25)] border-[#f3731c]" : "bg-[#131017] border-[#a2a2a2]"
       }`}
     >
@@ -198,7 +198,7 @@ export default function Menu() {
               />
               <button
                 onClick={handleAdd}
-                className="h-[clamp(2.25rem,2.5vw,2.375rem)] px-[clamp(1rem,1.5vw,1.5rem)] bg-[#f3731c] rounded-[5px] flex items-center justify-center hover:opacity-90 transition-opacity"
+                className="h-[clamp(2.25rem,2.5vw,2.375rem)] px-[clamp(1rem,1.5vw,1.5rem)] bg-[#f3731c] rounded-[5px] flex items-center justify-center hover:scale-[1.01] active:scale-[0.97] transition-all duration-200"
               >
                 <span className="font-kulim font-semibold text-[#d9d9d9] text-[clamp(0.75rem,0.9vw,0.875rem)] tracking-[0.42px] leading-normal">
                   Añadir al carrito
@@ -210,7 +210,7 @@ export default function Menu() {
 
         {/* Burger cards + navigation */}
         <div className="flex items-center gap-[clamp(0.75rem,1.5vw,1.25rem)] mt-[clamp(0.5rem,1.5vw,1rem)] animate-fade-in-up [animation-delay:0.2s]">
-          <button onClick={goPrev} className="shrink-0 flex items-center justify-center hover:opacity-80 transition-opacity">
+          <button onClick={goPrev} className="shrink-0 flex items-center justify-center hover:scale-[1.05] active:scale-[0.92] transition-all duration-200">
             <img alt="Anterior" src={ARROW} className="block size-[clamp(2rem,2.8vw,2.5625rem)] rotate-180" />
           </button>
 
@@ -228,7 +228,7 @@ export default function Menu() {
             ))}
           </div>
 
-          <button onClick={goNext} className="shrink-0 flex items-center justify-center hover:opacity-80 transition-opacity">
+          <button onClick={goNext} className="shrink-0 flex items-center justify-center hover:scale-[1.05] active:scale-[0.92] transition-all duration-200">
             <img alt="Siguiente" src={ARROW} className="block size-[clamp(2rem,2.8vw,2.5625rem)]" />
           </button>
         </div>
