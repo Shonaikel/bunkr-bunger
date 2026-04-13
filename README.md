@@ -1,8 +1,8 @@
-# 🍔 Bunkr Burger Factory
+# Bunkr Burger Factory
 
 Bunker Factory is a modern restaurant website designed to deliver a strong visual identity and engaging user experience. It combines clean layouts, smooth animations, and well-structured sections to create a dynamic and polished interface.
 
-Developed using React, TypeScript, and Tailwind CSS, the project follows a scalable component-based approach and clean development practices.
+Developed using React, TypeScript, Tailwind CSS, and Claude, the project follows a scalable component-based approach and clean development practices.
 
 The entire project was built in just one week using an accelerated workflow powered by Claude, enabling rapid iteration without compromising design and code quality.
 
@@ -10,16 +10,7 @@ Figma Design: https://www.figma.com/community/file/1619179765609161451/bunkr-bur
 
 <img width="1630" height="807" alt="Bunkrprev2" src="https://github.com/user-attachments/assets/1dfda7ed-dbcd-499a-91e6-ccc311ab8536" /> 
 
-## ⚙️ Tech Stack
-
-Built with a modern frontend stack and an accelerated development workflow:
-
-- **React** – Component-based architecture for dynamic interfaces  
-- **TypeScript** – Type safety and scalable code structure  
-- **Tailwind CSS** – Utility-first styling for fast and consistent UI  
-- **Claude** – AI-assisted development to speed up iteration and implementation
-- 
-## 🛠️ Installation
+## Installation
 
 ```bash
 # Clone the repository
