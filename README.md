@@ -6,9 +6,9 @@ Developed using React, TypeScript, and Tailwind CSS, the project follows a scala
 
 The entire project was built in just one week using an accelerated workflow powered by Claude, enabling rapid iteration without compromising design and code quality.
 
-## Figma Design:
-https://www.figma.com/community/file/1619179765609161451/bunkr-burger-factory?q_id=fe864ea9-89b8-4391-b62f-3d48b2fe9c82
-<img width="1630" height="807" alt="Bunkrprev2" src="https://github.com/user-attachments/assets/1dfda7ed-dbcd-499a-91e6-ccc311ab8536" /> <img width="1361" height="820" alt="Bunkrprev3" src="https://github.com/user-attachments/assets/3bde7b60-5737-4ae0-97bc-a8758dd4b42d" /> 
+Figma Design: https://www.figma.com/community/file/1619179765609161451/bunkr-burger-factory?q_id=fe864ea9-89b8-4391-b62f-3d48b2fe9c82
+
+<img width="1630" height="807" alt="Bunkrprev2" src="https://github.com/user-attachments/assets/1dfda7ed-dbcd-499a-91e6-ccc311ab8536" /> 
 
 ## ⚙️ Tech Stack
 
