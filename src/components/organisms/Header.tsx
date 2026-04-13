@@ -15,10 +15,18 @@ const CART_PATH = "M8.74667 23.3244C7.14311 23.3244 5.84569 24.6364 5.84569 26.2
 
 interface HeaderProps {
   logoSrc: string;
+  cartIconSrc?: string;
+  navigationItems?: { href: string; label: string }[];
+  phoneNumber?: string;
   className?: string;
 }
 
-export default function Header({ logoSrc, className = "" }: HeaderProps) {
+export default function Header({
+  logoSrc,
+  navigationItems = NAV_ITEMS,
+  phoneNumber = PHONE,
+  className = "",
+}: HeaderProps) {
   const { totalItems, bump, setIsOpen } = useCart();
   const cartRef = useRef<HTMLDivElement>(null);
 
@@ -44,14 +52,14 @@ export default function Header({ logoSrc, className = "" }: HeaderProps) {
             className="font-league font-bold text-[#d9d9d9] tracking-[0.7px] leading-normal"
             style={{ fontSize: "clamp(0.65rem, 0.8vw, 0.75rem)" }}
           >
-            {PHONE}
+            {phoneNumber}
           </p>
         </div>
 
         {/* Right — Nav + Cart */}
         <div className="flex items-center" style={{ gap: "clamp(1.25rem, 3vw, 3.2rem)" }}>
           <nav className="flex items-center" style={{ gap: "clamp(1.25rem, 3vw, 3.2rem)" }}>
-            {NAV_ITEMS.map(item => (
+            {navigationItems.map(item => (
               <NavLink key={item.href} href={item.href} label={item.label} />
             ))}
           </nav>
