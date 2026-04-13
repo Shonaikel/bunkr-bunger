@@ -1,8 +1,15 @@
+import { Hero, BestBurgers, OrderMenu, Information, Services, Location, ActionSection } from "../components";
+
 export default function Home() {
   return (
-    <div className="p-8">
-      <h1 className="text-3xl font-bold">Home</h1>
-      <p className="mt-2 text-gray-500">Welcome to bunkr-bunger.</p>
-    </div>
-  )
+    <>
+      <Hero />
+      <BestBurgers />
+      <OrderMenu />
+      <Information className="mt-[clamp(2.5rem,6vw,5rem)]" />
+      <Services className="mt-[clamp(2.5rem,6vw,5rem)]" />
+      <Location className="mt-[clamp(2.5rem,6vw,5rem)]" />
+      <ActionSection />
+    </>
+  );
 }
