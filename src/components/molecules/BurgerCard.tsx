@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 interface BurgerCardProps {
   image: string;
   name: string;
@@ -37,7 +39,7 @@ export default function BurgerCard({ image, name, price, description, href, isAc
   const base = "relative flex-1 min-w-0 max-w-[22.8125rem] aspect-[365/400] group transition-all duration-200 hover:scale-[1.02] active:scale-[0.98]";
 
   if (href) {
-    return <a href={href} className={base}>{inner}</a>;
+    return <Link to={href} className={base}>{inner}</Link>;
   }
 
   return (

@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 const HERO_BG   = "/assets/hero/hero-bg.jpg";
 const FACEBOOK  = "/assets/hero/hero-facebook.svg";
 const X_ICON    = "/assets/hero/hero-x-icon.svg";
@@ -54,15 +56,15 @@ export default function Hero({ className = "" }: { className?: string }) {
               EL VERDADERO SABER DE LA HAMBURGUESA
             </p>
 
-            <a
-              href="/menu"
-              className="mt-4 w-fit flex items-center justify-center bg-[#d9d9d9] text-[#1b1b1b] rounded-md px-6 py-2 md:px-8 md:py-3 
+            <Link
+              to="/menu"
+              className="mt-4 w-fit flex items-center justify-center bg-[#d9d9d9] text-[#1b1b1b] rounded-md px-6 py-2 md:px-8 md:py-3
                          shadow hover:scale-[1.02] active:scale-[0.98] transition-all duration-200"
             >
               <span className="font-league font-semibold text-[#1b1b1b] tracking-[1px] leading-normal text-[clamp(0.625rem,1.05vw,1.25rem)]">
                 ORDENA YA
               </span>
-            </a>
+            </Link>
           </div>
 
           {/* Social icons column */}

@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 export default function ActionSection({ className = "" }: { className?: string }) {
   return (
     <div className="flex w-full justify-center bg-[#f4b525] leading-none">
@@ -35,14 +37,14 @@ export default function ActionSection({ className = "" }: { className?: string }
               Escríbenos para reservaciones, pedidos o más información y déjanos hacer de tu visita un momento único con vistas increíbles, buena comida y un ambiente especial.
             </p>
 
-            <a
-              href="/contact"
+            <Link
+              to="/contact"
               className="mt-[clamp(1rem,2vw,1.5rem)] w-fit flex items-center justify-center px-[clamp(1rem,2vw,2rem)] py-[clamp(0.5rem,0.75vw,0.75rem)] bg-[#f3731c] rounded-[5px] shadow-[0_4px_20px_rgba(0,0,0,0.15)] hover:scale-[1.02] active:scale-[0.98] transition-all duration-200"
             >
               <span className="font-kulim font-semibold text-[clamp(0.875rem,1vw,1rem)] text-white tracking-[2.4px]">
                 CONTÁCTANOS
               </span>
-            </a>
+            </Link>
 
           </div>
 

@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 const MAP_1  = "/assets/locations/map-1.jpg";
 const MAP_2  = "/assets/locations/map-2.jpg";
 
@@ -54,14 +56,14 @@ export default function Location({ className = "" }: { className?: string }) {
         {/* Maps */}
         <div className="flex-1 flex gap-[clamp(0.75rem,1.2vw,1rem)] animate-fade-in-up" style={{ animationDelay: "0.15s" }}>
           {/* Map 1 — Heredia */}
-          <a href="/locations" className="flex-1 min-h-[clamp(14rem,20vw,17.5rem)] aspect-[5/4] rounded-[25px] overflow-hidden hover:opacity-90 transition-opacity">
+          <Link to="/locations" className="flex-1 min-h-[clamp(14rem,20vw,17.5rem)] aspect-[5/4] rounded-[25px] overflow-hidden hover:opacity-90 transition-opacity">
             <img alt="Mapa Heredia" className="w-full h-full object-cover" src={MAP_1} />
-          </a>
+          </Link>
 
           {/* Map 2 — San José */}
-          <a href="/locations" className="flex-1 min-h-[clamp(14rem,20vw,17.5rem)] aspect-[5/4] rounded-[25px] overflow-hidden hover:opacity-90 transition-opacity">
+          <Link to="/locations" className="flex-1 min-h-[clamp(14rem,20vw,17.5rem)] aspect-[5/4] rounded-[25px] overflow-hidden hover:opacity-90 transition-opacity">
             <img alt="Mapa San José" className="w-full h-full object-cover" src={MAP_2} />
-          </a>
+          </Link>
         </div>
       </div>
       </div>

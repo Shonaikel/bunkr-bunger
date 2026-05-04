@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import BurgerCard from '../molecules/BurgerCard';
 import { BURGERS } from '../../constants/burgers';
 
@@ -45,15 +46,15 @@ export default function BestBurgers({ className = "" }: { className?: string }) 
         </div>
 
         {/* VER MENÚ button */}
-        <a
-          href="/menu"
+        <Link
+          to="/menu"
           className="h-[46px] px-8 flex items-center justify-center bg-[#f3731c] rounded-[5px]
                     hover:scale-[1.02] active:scale-[0.98] transition-all duration-200"
         >
           <span className="font-kulim font-bold text-[18px] text-white tracking-[0.96px] leading-normal">
             VER MENÚ
           </span>
-        </a>
+        </Link>
 
       </div>
     </section>
